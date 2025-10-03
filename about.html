@@ -3,63 +3,322 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Tucson AC Repair</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="About Tucson Emergency AC Repair - Connecting homeowners with trusted, licensed AC professionals across Greater Tucson.">
+    <title>About Us | Tucson Emergency AC Repair</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: #111827;
+        }
+        
+        /* Navigation */
+        nav {
+            background: #1e40af;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+        }
+        
+        nav a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Header */
+        .page-header {
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        
+        .page-header h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+        
+        .page-header p {
+            font-size: 20px;
+            opacity: 0.95;
+        }
+        
+        /* Container */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+        
+        h2 {
+            font-size: 32px;
+            color: #1e40af;
+            margin: 40px 0 20px;
+        }
+        
+        p {
+            margin-bottom: 20px;
+            line-height: 1.8;
+            font-size: 18px;
+            color: #374151;
+        }
+        
+        /* Value Props */
+        .values {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 50px 0;
+        }
+        
+        .value {
+            background: #f3f4f6;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .value-icon {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+        
+        .value h3 {
+            font-size: 22px;
+            color: #1e40af;
+            margin-bottom: 10px;
+        }
+        
+        .value p {
+            font-size: 16px;
+            color: #6b7280;
+        }
+        
+        /* Comparison Table */
+        .comparison {
+            background: #f9fafb;
+            padding: 40px;
+            border-radius: 12px;
+            margin: 40px 0;
+        }
+        
+        .comparison h3 {
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 30px;
+            color: #1e40af;
+        }
+        
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+        
+        .comparison-col h4 {
+            font-size: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .comparison-col.old h4 {
+            color: #dc2626;
+        }
+        
+        .comparison-col.new h4 {
+            color: #10b981;
+        }
+        
+        .comparison-item {
+            padding: 15px;
+            background: white;
+            border-radius: 6px;
+            margin-bottom: 10px;
+        }
+        
+        .comparison-col.old .comparison-item {
+            border-left: 4px solid #dc2626;
+        }
+        
+        .comparison-col.new .comparison-item {
+            border-left: 4px solid #10b981;
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            background: #1e40af;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            margin-top: 60px;
+        }
+        
+        .cta-section h2 {
+            color: white;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 16px 32px;
+            background: #f59e0b;
+            color: white;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 18px;
+            border-radius: 8px;
+            transition: transform 0.2s;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+        
+        /* Footer */
+        footer {
+            background: #111827;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        footer a {
+            color: #3b82f6;
+            text-decoration: none;
+        }
+        
+        ul {
+            margin: 20px 0 20px 40px;
+            font-size: 18px;
+            line-height: 1.8;
+            color: #374151;
+        }
+        
+        li {
+            margin-bottom: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            .page-header h1 {
+                font-size: 32px;
+            }
+            
+            .comparison-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Tucson AC Repair</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html" class="active">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <main>
-        <section class="hero">
-            <div class="container">
-                <h2>About Tucson AC Repair</h2>
-                <p>Your trusted partner for air conditioning solutions in Tucson, Arizona</p>
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="service-areas.html">Service Areas</a>
+        <a href="faq.html">FAQ</a>
+    </nav>
+    
+    <!-- Header -->
+    <div class="page-header">
+        <h1>About Tucson Emergency AC Repair</h1>
+        <p>Connecting Tucson homeowners with trusted AC professionals</p>
+    </div>
+    
+    <!-- Main Content -->
+    <div class="container">
+        <h2>Our Story</h2>
+        <p>After seeing too many Tucson families suffer through 110°F+ heat while waiting hours (or even days) for AC repair callbacks, we knew there had to be a better way.</p>
+        
+        <p>Traditional AC repair is broken. You call five companies, leave voicemails, wait for callbacks that never come, and when someone finally answers, you have no idea if you're getting a fair price or quality service.</p>
+        
+        <p>We built this platform to fix that problem. Our service connects you instantly with multiple licensed, vetted AC professionals in your area. No more endless phone calls. No more waiting. Just fast, reliable service when you need it most.</p>
+        
+        <div class="values">
+            <div class="value">
+                <div class="value-icon">🎯</div>
+                <h3>Our Mission</h3>
+                <p>Connect every Arizona homeowner with fast, affordable, honest AC service.</p>
             </div>
-        </section>
-
-        <section class="content">
-            <div class="container">
-                <div class="about-content">
-                    <h3>Our Story</h3>
-                    <p>Founded in 2010, Tucson AC Repair has been serving the greater Tucson area with professional, reliable air conditioning services for over a decade. We understand the importance of a comfortable home environment, especially during Arizona's scorching summers.</p>
-                    
-                    <h3>Our Mission</h3>
-                    <p>Our mission is to provide top-quality AC repair, maintenance, and installation services at fair prices. We believe in honest work, transparent pricing, and treating every customer like family.</p>
-                    
-                    <h3>Why Choose Us?</h3>
-                    <ul>
-                        <li>Licensed and insured technicians</li>
-                        <li>24/7 emergency service available</li>
-                        <li>Free estimates on new installations</li>
-                        <li>Same-day service in most cases</li>
-                        <li>100% satisfaction guarantee</li>
-                        <li>Competitive pricing</li>
-                    </ul>
-                    
-                    <h3>Our Team</h3>
-                    <p>Our team consists of certified HVAC technicians with years of experience in the industry. We stay up-to-date with the latest technology and best practices to ensure your air conditioning system runs efficiently and effectively.</p>
+            
+            <div class="value">
+                <div class="value-icon">✓</div>
+                <h3>Our Standards</h3>
+                <p>Every technician in our network is licensed, insured, and background-checked.</p>
+            </div>
+            
+            <div class="value">
+                <div class="value-icon">🤝</div>
+                <h3>Our Commitment</h3>
+                <p>We only succeed when you get great service. Your satisfaction is our priority.</p>
+            </div>
+        </div>
+        
+        <div class="comparison">
+            <h3>Why Choose Our Service?</h3>
+            <div class="comparison-grid">
+                <div class="comparison-col old">
+                    <h4>❌ The Traditional Way</h4>
+                    <div class="comparison-item">Call 5-10 companies manually</div>
+                    <div class="comparison-item">Wait hours for callbacks</div>
+                    <div class="comparison-item">No idea about pricing upfront</div>
+                    <div class="comparison-item">Hope you picked a good company</div>
+                    <div class="comparison-item">Pressure to commit on the spot</div>
+                </div>
+                
+                <div class="comparison-col new">
+                    <h4>✅ Our Way</h4>
+                    <div class="comparison-item">Fill one form, get 3 quotes</div>
+                    <div class="comparison-item">Response in 5-15 minutes</div>
+                    <div class="comparison-item">Compare quotes before choosing</div>
+                    <div class="comparison-item">All technicians pre-vetted</div>
+                    <div class="comparison-item">Choose on your terms</div>
                 </div>
             </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Tucson AC Repair. All rights reserved.</p>
-            <p>Phone: (520) 555-0123 | Email: info@tucsonacrepair.com</p>
         </div>
+        
+        <h2>How We Vet Technicians</h2>
+        <p>Not every AC company makes it into our network. We have strict requirements:</p>
+        <ul>
+            <li><strong>Arizona ROC License:</strong> Must be licensed by the Registrar of Contractors</li>
+            <li><strong>Insurance:</strong> Liability and workers compensation required</li>
+            <li><strong>Background Checks:</strong> All technicians are screened</li>
+            <li><strong>Customer Reviews:</strong> Must maintain high ratings</li>
+            <li><strong>Response Time:</strong> Commitment to fast callbacks</li>
+            <li><strong>Transparent Pricing:</strong> No bait-and-switch tactics</li>
+        </ul>
+        
+        <p style="margin-top: 30px;">Companies that receive complaints or fail to meet our standards are removed from the network immediately.</p>
+    </div>
+    
+    <!-- CTA -->
+    <div class="cta-section">
+        <h2>Ready to Get Your AC Fixed?</h2>
+        <a href="index.html#form" class="btn">Get Free Quotes Now →</a>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Tucson Emergency AC Repair | Licensed & Insured</p>
+        <p style="margin-top: 10px;">
+            <a href="privacy.html">Privacy Policy</a> | 
+            <a href="terms.html">Terms of Service</a>
+        </p>
     </footer>
 </body>
 </html>
