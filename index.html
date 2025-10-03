@@ -1,421 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Emergency AC Repair in Tucson. Get connected with licensed technicians in minutes. Free quotes, 24/7 service.">
-    <title>Emergency AC Repair Tucson | 24/7 Service | Free Quotes</title>
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            line-height: 1.6;
-            color: #111827;
-            background: #fff;
-        }
-        
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
-            color: white;
-            padding: 80px 20px;
-            text-align: center;
-        }
-        
-        .hero h1 {
-            font-size: 48px;
-            font-weight: 700;
-            margin-bottom: 20px;
-            line-height: 1.2;
-        }
-        
-        .hero p {
-            font-size: 20px;
-            margin-bottom: 40px;
-            opacity: 0.95;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-        .cta-buttons {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        
-        .btn {
-            padding: 16px 32px;
-            font-size: 18px;
-            font-weight: 600;
-            border-radius: 8px;
-            text-decoration: none;
-            display: inline-block;
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-        
-        .btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-        }
-        
-        .btn-primary {
-            background: #f59e0b;
-            color: white;
-        }
-        
-        .btn-secondary {
-            background: white;
-            color: #1e40af;
-        }
-        
-        /* Trust Badges */
-        .trust-badges {
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-            margin-top: 50px;
-            flex-wrap: wrap;
-        }
-        
-        .badge {
-            text-align: center;
-        }
-        
-        .badge-icon {
-            font-size: 32px;
-            margin-bottom: 10px;
-        }
-        
-        .badge-text {
-            font-size: 14px;
-            opacity: 0.9;
-        }
-        
-        /* Container */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 80px 20px;
-        }
-        
-        /* Section Styling */
-        section {
-            margin-bottom: 80px;
-        }
-        
-        h2 {
-            font-size: 36px;
-            text-align: center;
-            margin-bottom: 50px;
-            color: #1e40af;
-        }
-        
-        /* How It Works */
-        .steps {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 40px;
-        }
-        
-        .step {
-            text-align: center;
-            padding: 30px;
-        }
-        
-        .step-number {
-            width: 60px;
-            height: 60px;
-            background: #1e40af;
-            color: white;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 28px;
-            font-weight: 700;
-            margin: 0 auto 20px;
-        }
-        
-        .step h3 {
-            font-size: 22px;
-            margin-bottom: 15px;
-            color: #111827;
-        }
-        
-        .step p {
-            color: #6b7280;
-            line-height: 1.8;
-        }
-        
-        /* Service Areas */
-        .areas {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-        }
-        
-        .area {
-            background: #f3f4f6;
-            padding: 20px;
-            border-radius: 8px;
-            text-align: center;
-            font-weight: 600;
-            color: #1e40af;
-        }
-        
-        /* Contact Form */
-        .form-section {
-            background: #f9fafb;
-            padding: 60px 20px;
-            border-radius: 12px;
-        }
-        
-        form {
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        
-        .form-group {
-            margin-bottom: 25px;
-        }
-        
-        label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: 600;
-            color: #374151;
-        }
-        
-        input, select, textarea {
-            width: 100%;
-            padding: 12px;
-            font-size: 16px;
-            border: 2px solid #e5e7eb;
-            border-radius: 6px;
-            font-family: inherit;
-            transition: border-color 0.2s;
-        }
-        
-        input:focus, select:focus, textarea:focus {
-            outline: none;
-            border-color: #1e40af;
-        }
-        
-        textarea {
-            resize: vertical;
-            min-height: 100px;
-        }
-        
-        .required {
-            color: #ef4444;
-        }
-        
-        button[type="submit"] {
-            width: 100%;
-            padding: 16px;
-            background: #f59e0b;
-            color: white;
-            font-size: 18px;
-            font-weight: 700;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: background 0.2s, transform 0.2s;
-        }
-        
-        button[type="submit"]:hover {
-            background: #d97706;
-            transform: translateY(-2px);
-        }
-        
-        .form-note {
-            text-align: center;
-            margin-top: 20px;
-            font-size: 14px;
-            color: #6b7280;
-        }
-        
-        /* Footer */
-        footer {
-            background: #111827;
-            color: white;
-            padding: 40px 20px;
-            text-align: center;
-        }
-        
-        footer a {
-            color: #3b82f6;
-            text-decoration: none;
-        }
-        
-        /* Responsive */
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 32px;
-            }
-            
-            .hero p {
-                font-size: 18px;
-            }
-            
-            h2 {
-                font-size: 28px;
-            }
-            
-            .trust-badges {
-                gap: 20px;
-            }
-        }
-    </style>
-</head>
-<body>
-    <!-- Hero Section -->
-    <section class="hero">
-        <h1>Emergency AC Repair in Tucson</h1>
-        <p>When your AC fails in the Arizona heat, every minute counts. Get connected with licensed technicians in under 5 minutes.</p>
-        
-        <div class="cta-buttons">
-            <a href="#form" class="btn btn-primary">🔥 Get Emergency Service Now</a>
-            <a href="tel:520-555-0123" class="btn btn-secondary">📞 Call Now: (520) 555-0123</a>
-        </div>
-        
-        <div class="trust-badges">
-            <div class="badge">
-                <div class="badge-icon">⚡</div>
-                <div class="badge-text">15-Minute Response</div>
-            </div>
-            <div class="badge">
-                <div class="badge-icon">✓</div>
-                <div class="badge-text">Licensed & Insured</div>
-            </div>
-            <div class="badge">
-                <div class="badge-icon">💰</div>
-                <div class="badge-text">Upfront Pricing</div>
-            </div>
-            <div class="badge">
-                <div class="badge-icon">⭐</div>
-                <div class="badge-text">500+ 5-Star Reviews</div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- How It Works -->
-    <div class="container">
-        <section>
-            <h2>Get Cool Again in 3 Simple Steps</h2>
-            <div class="steps">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <h3>Tell Us What's Wrong</h3>
-                    <p>Fill out our 30-second form describing your AC issue. No account or credit card needed.</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <h3>Get Connected Fast</h3>
-                    <p>We instantly notify 2-3 local technicians who can help. They'll call you within minutes.</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <h3>Choose Your Pro</h3>
-                    <p>Compare quotes and availability. Book the one that fits your schedule and budget.</p>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Service Areas -->
-        <section>
-            <h2>Serving Tucson & Surrounding Areas</h2>
-            <div class="areas">
-                <div class="area">✓ Tucson</div>
-                <div class="area">✓ Oro Valley</div>
-                <div class="area">✓ Marana</div>
-                <div class="area">✓ Catalina Foothills</div>
-                <div class="area">✓ Sahuarita</div>
-                <div class="area">✓ Green Valley</div>
-            </div>
-        </section>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Emergency AC Repair in Tucson. Get connected with licensed technicians in minutes. Free quotes, 24/7 service."/>
+<title>Emergency AC Repair Tucson | 24/7 Service | Free Quotes</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; line-height: 1.6; color: #111827; background: #fff; }
+.hero { background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%); color: white; padding: 80px 20px; text-align: center; }
+.hero h1 { font-size: 48px; font-weight: 700; margin-bottom: 20px; line-height: 1.2; }
+.hero p { font-size: 20px; margin-bottom: 40px; opacity: 0.95; max-width: 700px; margin-left: auto; margin-right: auto; }
+.cta-buttons { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+.btn { padding: 16px 32px; font-size: 18px; font-weight: 600; border-radius: 8px; text-decoration: none; display: inline-block; transition: transform 0.2s, box-shadow 0.2s; }
+.btn:hover { transform: translateY(-2px); box-shadow: 0 10px 25px rgba(0,0,0,0.2); }
+.btn-primary { background: #f59e0b; color: white; }
+.btn-secondary { background: white; color: #1e40af; }
+.trust-badges { display: flex; justify-content: center; gap: 40px; margin-top: 50px; flex-wrap: wrap; }
+.badge { text-align: center; }
+.badge-icon { font-size: 32px; margin-bottom: 10px; }
+.badge-text { font-size: 14px; opacity: 0.9; }
+.container { max-width: 1200px; margin: 0 auto; padding: 80px 20px; }
+section { margin-bottom: 80px; }
+h2 { font-size: 36px; text-align: center; margin-bottom: 50px; color: #1e40af; }
+.steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; }
+.step { text-align: center; padding: 30px; }
+.step-number { width: 60px; height: 60px; background: #1e40af; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 28px; font-weight: 700; margin: 0 auto 20px; }
+.step h3 { font-size: 22px; margin-bottom: 15px; color: #111827; }
+.step p { color: #6b7280; line-height: 1.8; }
+.areas { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
+.area { background: #f3f4f6; padding: 20px; border-radius: 8px; text-align: center; font-weight: 600; color: #1e40af; }
+.form-section { background: #f9fafb; padding: 60px 20px; border-radius: 12px; }
+form { max-width: 600px; margin: 0 auto; }
+.form-group { margin-bottom: 25px; }
+label { display: block; margin-bottom: 8px; font-weight: 600; color: #374151; }
+input, select, textarea { width: 100%; padding: 12px; font-size: 16px; border: 2px solid #e5e7eb; border-radius: 6px; font-family: inherit; transition: border-color 0.2s; }
+input:focus, select:focus, textarea:focus { outline: none; border-color: #1e40af; }
+textarea { resize: vertical; min-height: 100px; }
+.required { color: #ef4444; }
+button[type="submit"] { width: 100%; padding: 16px; background: #f59e0b; color: white; font-size: 18px; font-weight: 700; border: none; border-radius: 8px; cursor: pointer; transition: background 0.2s, transform 0.2s; }
+button[type="submit"]:hover { background: #d97706; transform: translateY(-2px); }
+.form-note { text-align: center; margin-top: 20px; font-size: 14px; color: #6b7280; }
+footer { background: #111827; color: white; padding: 40px 20px; text-align: center; }
+footer a { color: #3b82f6; text-decoration: none; }
+@media (max-width: 768px) { .hero h1 { font-size: 32px; } .hero p { font-size: 18px; } h2 { font-size: 28px; } .trust-badges { gap: 20px; } }
+</style>
+<section class="hero">
+  <h1>Emergency AC Repair in Tucson</h1>
+  <p>When your AC fails in the Arizona heat, every minute counts. Get connected with licensed technicians in under 5 minutes.</p>
+  <div class="cta-buttons">
+    <a class="btn btn-primary" href="#form">🔥 Get Emergency Service Now</a>
+    <a class="btn btn-secondary" href="tel:520-555-0123">📞 Call Now: (520) 555-0123</a>
+  </div>
+  <div class="trust-badges">
+    <div class="badge"><div class="badge-icon">⚡</div><div class="badge-text">15-Minute Response</div></div>
+    <div class="badge"><div class="badge-icon">✓</div><div class="badge-text">Licensed &amp; Insured</div></div>
+    <div class="badge"><div class="badge-icon">💰</div><div class="badge-text">Upfront Pricing</div></div>
+    <div class="badge"><div class="badge-icon">⭐</div><div class="badge-text">500+ 5-Star Reviews</div></div>
+  </div>
+</section>
+<div class="container">
+  <section>
+    <h2>Get Cool Again in 3 Simple Steps</h2>
+    <div class="steps">
+      <div class="step"><div class="step-number">1</div><h3>Tell Us What's Wrong</h3><p>Fill out our 30-second form describing your AC issue. No account or credit card needed.</p></div>
+      <div class="step"><div class="step-number">2</div><h3>Get Connected Fast</h3><p>We instantly notify 2-3 local technicians who can help. They'll call you within minutes.</p></div>
+      <div class="step"><div class="step-number">3</div><h3>Choose Your Pro</h3><p>Compare quotes and availability. Book the one that fits your schedule and budget.</p></div>
     </div>
-    
-    <!-- Contact Form -->
-    <section id="form" class="form-section">
-        <div class="container">
-            <h2>Get Multiple Quotes in Minutes</h2>
-            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-                <div class="form-group">
-                    <label>Full Name <span class="required">*</span></label>
-                    <input type="text" name="name" required>
-                </div>
-                
-                <div class="form-group">
-                    <label>Phone Number <span class="required">*</span></label>
-                    <input type="tel" name="phone" required>
-                </div>
-                
-                <div class="form-group">
-                    <label>Email Address <span class="required">*</span></label>
-                    <input type="email" name="email" required>
-                </div>
-                
-                <div class="form-group">
-                    <label>ZIP Code <span class="required">*</span></label>
-                    <input type="text" name="zip" pattern="[0-9]{5}" required>
-                </div>
-                
-                <div class="form-group">
-                    <label>What type of service do you need? <span class="required">*</span></label>
-                    <select name="service" required>
-                        <option value="">Select...</option>
-                        <option value="emergency">Emergency Repair (AC not working)</option>
-                        <option value="not-cooling">AC not cooling properly</option>
-                        <option value="noise">Strange noises or smells</option>
-                        <option value="leak">Water leaking</option>
-                        <option value="installation">Installation/Replacement</option>
-                        <option value="maintenance">Routine maintenance</option>
-                        <option value="other">Other</option>
-                    </select>
-                </div>
-                
-                <div class="form-group">
-                    <label>When do you need service? <span class="required">*</span></label>
-                    <select name="urgency" required>
-                        <option value="">Select...</option>
-                        <option value="immediate">Immediately (Emergency)</option>
-                        <option value="24hours">Within 24 hours</option>
-                        <option value="2-3days">Within 2-3 days</option>
-                        <option value="flexible">Flexible timing</option>
-                    </select>
-                </div>
-                
-                <div class="form-group">
-                    <label>Additional Details (Optional)</label>
-                    <textarea name="details" placeholder="Briefly describe the issue or your needs"></textarea>
-                </div>
-                
-                <button type="submit">Get Free Quotes Now →</button>
-                
-                <p class="form-note">🔒 Your information is secure and will only be shared with licensed technicians in your area.</p>
-            </form>
-        </div>
-    </section>
-    
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Tucson Emergency AC Repair | Licensed & Insured</p>
-        <p style="margin-top: 10px;">
-            <a href="privacy.html">Privacy Policy</a> | 
-            <a href="terms.html">Terms of Service</a>
-        </p>
-    </footer>
-</body>
-</html>
+  </section>
+  <section>
+    <h2>Serving Tucson &amp; Surrounding Areas</h2>
+    <div class="areas">
+      <div class="area">✓ Tucson</div>
+      <div class="area">✓ Oro Valley</div>
+      <div class="area">✓ Marana</div>
+      <div class="area">✓ Catalina Foothills</div>
+      <div class="area">✓ Sahuarita</div>
+      <div class="area">✓ Green Valley</div>
+    </div>
+  </section>
+</div>
+<section class="form-section" id="form">
+  <div class="container">
+    <h2>Get Multiple Quotes in Minutes</h2>
+    <form action="https://formspree.io/f/mzzjgjna" method="POST">
+      <div class="form-group">
+        <label>Full Name <span class="required">*</span></label>
+        <input type="text" name="name" required />
+      </div>
+      <div class="form-group">
+        <label>Phone Number <span class="required">*</span></label>
+        <input type="tel" name="phone" required />
+      </div>
+      <div class="form-group">
+        <label>Email Address <span class="required">*</span></label>
+        <input type="email" name="email" required />
+      </div>
+      <div class="form-group">
+        <label>ZIP Code <span class="required">*</span></label>
+        <input type="text" name="zip" pattern="[0-9]{5}" required />
+      </div>
+      <div class="form-group">
+        <label>What type of service do you need? <span class="required">*</span></label>
+        <select name="service" required>
+          <option value="">Select...</option>
+          <option value="emergency">Emergency Repair (AC not working)</option>
+          <option value="not-cooling">AC not cooling properly</option>
+          <option value="noise">Strange noises or smells</option>
+          <option value="leak">Water leaking</option>
+          <option value="installation">Installation/Replacement</option>
+          <option value="maintenance">Routine maintenance</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>When do you need service? <span class="required">*</span></label>
+        <select name="urgency" required>
+          <option value="">Select...</option>
+          <option value="immediate">Immediately (Emergency)</option>
+          <option value="24hours">Within 24 hours</option>
+          <option value="2-3days">Within 2-3 days</option>
+          <option value="flexible">Flexible timing</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Additional Details (Optional)</label>
+        <textarea name="details" placeholder="Briefly describe the issue or your needs"></textarea>
+      </div>
+      <button type="submit">Get Free Quotes Now →</button>
+      <p class="form-note">🔒 Your information is secure and will only be shared with licensed technicians in your area.</p>
+    </form>
+  </div>
+</section>
+<footer>
+  © 2025 Tucson Emergency AC Repair | Licensed &amp; Insured
+  <p style="margin-top: 10px;">
+    <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a>
+  </p>
+</footer>
